@@ -1,0 +1,401 @@
+/* Reset e padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+/* Cor de fundo azul claro do site */
+body {
+  background-color: #d6eaf8; /* azul claro */
+  color: #333;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container centralizado com fundo branco */
+.conteudo {
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #0062a4;
+  padding: 0;
+  text-align: center;
+}
+
+#banner img {
+  width: 100%;
+  display: block;
+}
+
+/* Navegação */
+nav {
+  background-color: #023e73;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
+/* Seção inicial */
+.inicio ,.sobre{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10%;
+  background-color: #ffffff;
+}
+
+.inicio .texto, .sobre .texto {
+  flex: 1;
+  padding: 20px;
+}
+
+.inicio img, .sobre img {
+  flex: 1;
+  height: 370px;
+  width: 370px;
+  text-align: center;
+}
+
+/* Seção Sobre */
+.sobre {
+  padding: 60px 10%;
+  background-color: #f9f9f9;
+}
+
+.sobre_n {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+
+
+/* Título das seções */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #07559C;
+  margin-bottom: 20px;
+}
+
+/* Por que escolher */
+
+.por-que-escolher {
+  background-color: #07559C;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.por-que-escolher .titulo {
+  font-size: 28px;
+  color: #ffff;
+  margin-bottom: 40px;
+}
+
+.diferenciais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.diferenciais .item {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 220px;
+  height: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.diferenciais .item:hover {
+  transform: translateY(-5px);
+}
+
+.diferenciais .icon {
+  background-color: #07559C;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diferenciais .icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: white;
+  fill: none;
+}
+.diferenciais .icon img{
+  width: 32px;
+  height: 32px;
+  stroke: white;
+  fill: none;
+}
+
+.diferenciais h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #07559C;
+}
+
+.diferenciais p {
+  font-size: 14px;
+  color: #333;
+}
+
+
+/*Icones*/
+
+.icon-circle {
+    padding: 30px;
+  width: 80px;
+  height: 80px;
+  background-color: #07559C;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.svg-icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%) sepia(82%) saturate(0%) hue-rotate(290deg) brightness(105%) contrast(101%);
+}
+
+
+.icon-circle svg {
+align-items: ce;
+  width: 50px;
+  height: 50px;
+  
+}
+.icon-circle img {
+  width: 50px;
+  height: 50px;
+  fill: white;
+}
+
+/* Serviços */
+.servicos {
+  padding: 60px 10%;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.servicos .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+.card {
+    height: 480px;
+    width: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex: 250px;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+}
+.card h4 {
+    padding: 20px;
+  color: #07559C;
+}
+
+
+/* Clientes */
+
+.clientes {
+    background-color: #EDFAE9;
+  padding: 40px 20px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #07559C; /* azul MBL */
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+
+/* Rodapé */
+footer {
+  background-color: #023e73;
+  color: white;
+  padding: 40px 10%;
+}
+
+.localizacao-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.info-localizacao {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+.mapa {
+  flex: 1 1 400px;
+  min-height: 250px;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+footer .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contato-formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-formulario input,
+.contato-formulario textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+.contato-formulario button {
+  background-color: #0aa447;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contato-formulario button:hover {
+  background-color: #088a3c;
+}
+
+/* Estilo para cards com imagem e texto lado a lado */
+.card-horizontal {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.card-horizontal img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-horizontal .texto {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-horizontal h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #07559C;
+}
+
+.card-horizontal p {
+  font-size: 15px;
+  color: #333;
+}
+
+/* Responsivo */
+@media (max-width: 780px) {
+  .card-horizontal {
+    flex-direction: row;
+    height: 140px;
+    width: 160px;
+  }
+  .flex{
+    width: 500px;
+  }
+  .card img{
+    height: 150px;
+    width: 150px;
+    
+  }
+
+  .card-horizontal .texto {
+    padding: 10px;
+    justify-content: center;
+  }
+  .card p{
+    font-size: 12px;
+  }
+   .card h4{
+    padding: 10px;
+    font-size: 15px;
+   }
+}
